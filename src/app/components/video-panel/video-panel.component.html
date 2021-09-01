@@ -1,0 +1,14 @@
+<div class="videoPanel">
+    <div *ngFor="let video of videos" class="itemContent">
+        <img class="preview"
+             src="{{video.snippet.thumbnails.medium.url}}"/>
+        <div class="textVideo">
+            <div class="itemTitle">
+                {{video.snippet.title}}
+            </div>
+            <div class="itemInfo">
+                {{video.snippet.channelTitle}}
+            </div>
+        </div>
+    </div>
+</div>

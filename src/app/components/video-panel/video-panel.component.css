@@ -1,0 +1,28 @@
+.videoPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.itemContent {
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.preview {
+  width: 300px;
+}
+.textVideo {
+  padding: 5px 0 0 0;
+}
+
+.itemTitle {
+  font-size: larger;
+  overflow: hidden;
+  height: 45px;
+}
+.itemInfo {
+  opacity: 0.8;
+}

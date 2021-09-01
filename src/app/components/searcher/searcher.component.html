@@ -1,0 +1,15 @@
+<div class="searchHead">Поиск видео</div>
+<br>
+<div class="searchPlace">
+    <form (submit)="onSubmit(userAck.value)" class="searchForm">
+        <input class="searchBar"
+               type="text" 
+               id="filter"
+               placeholder="Название видео..."
+               #userAck
+        />
+        <button class="searchButton" type="submit">Поиск</button>
+    </form>
+</div>
+<br>
+<app-video-panel [userAsk]="userAsk"></app-video-panel>

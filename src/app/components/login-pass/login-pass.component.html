@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="loginPass">
+        <img class="logoImage"
+            src="/assets/logo.png"      
+        />
+        <h2>Вход</h2>
+        <form (submit)="onSubmit(login.value,password.value)"
+            class="formLoginPass">
+            <input
+                type="text" 
+                id="login"
+                placeholder="Имя пользователя"
+                #login                 
+            />
+            <input
+                type="password" 
+                id="pass"
+                placeholder="Пароль" 
+                #password
+            />
+            <button class="buttonLogin" type="submit">Войти</button>
+        </form>
+    </div>
+</div>

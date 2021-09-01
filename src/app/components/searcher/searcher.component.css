@@ -1,0 +1,26 @@
+.searchHead {
+  margin: 2% 0 0 5%;
+  font-size: xx-large;
+}
+.searchPlace {
+  display: flex;
+  flex-flow: row;
+  width: calc(100% - 10px);
+  justify-content: center;
+}
+.searchForm {
+  width: 80%;
+}
+.searchBar {
+  width: calc(100% - 85px);
+  height: 30px;
+  padding: 0 0 0 5px;
+  border-radius: 10px 0 0 10px;
+  outline: 0;
+}
+.searchButton {
+  height: 34px;
+  width: 75px;
+  border-radius: 0 10px 10px 0;
+  outline: 0;
+}
