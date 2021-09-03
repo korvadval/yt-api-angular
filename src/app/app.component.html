@@ -1,12 +1,16 @@
-<div class="header" *ngIf=isLogin>
+<div class="header unselectable" *ngIf=isLogin>
     <span class="headerName">API YouTube</span>
     <div class="buttonsPanel">
         <div class="buttonsLeft">
-            <div class="button"><a routerLink="/" >Поиск</a></div>
-            <div class="button"><a routerLink="/favorites" >Избранное</a></div>
+            <a routerLink="/" >
+                <div class="button">Поиск</div>
+            </a>
+            <a routerLink="/favorites" >
+                <div class="button">Избранное</div>
+            </a>
         </div>
-        <div class="buttonsRight">
-            <div class="button"><a (click)="deleteToken()"routerLink="/">Выход</a></div>
+        <div class="buttonsRight" (click)="deleteToken()">
+            <div class="button">Выход</div>
         </div>
     </div>
 </div>

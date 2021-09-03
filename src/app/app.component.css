@@ -37,6 +37,7 @@
   border-style: ridge;
   border-width: 0 0 3px 0;
   border-color: #21211f;
+  cursor: pointer;
 }
 a {
   color: black;

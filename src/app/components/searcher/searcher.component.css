@@ -7,9 +7,11 @@
   flex-flow: row;
   width: calc(100% - 10px);
   justify-content: center;
+  margin: 0px 0 0 20px;
 }
 .searchForm {
   width: 80%;
+  display: flex;
 }
 .searchBar {
   width: calc(100% - 85px);
@@ -21,6 +23,14 @@
 .searchButton {
   height: 34px;
   width: 75px;
+  position: relative;
+  right: 25px;
   border-radius: 0 10px 10px 0;
   outline: 0;
+}
+.saveIcon {
+  position: relative;
+  right: 30px;
+  font-size: x-large;
+  cursor: pointer;
 }

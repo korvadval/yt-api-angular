@@ -1,0 +1,17 @@
+<div *ngIf=needDialog class="saveMain">
+    <form (submit)="onSubmit(name.value, ask.value, count.value)">
+        <div class="saveField">
+            <label>Название запроса:</label>
+            <input type="text" value="Запрос '{{userAsk}}'" #name>    
+        </div>
+        <div class="saveField">
+            <label>Запрос:</label>
+            <input type="text" value={{userAsk}} readonly="true" #ask/>
+        </div>
+        <div class="saveField">
+            <label>Кол-во результатов:</label>
+            <input type="number" value={{counter}} max="50" min="0" onkeypress="return false" #count>    
+        </div>
+        <button type="submit">Сохранить</button>
+    </form>
+</div>

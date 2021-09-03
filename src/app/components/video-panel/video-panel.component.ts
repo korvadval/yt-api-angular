@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import searcherYT from "src/assets/js/youTubeSearcher.js";
+
 const API_KEY = "AIzaSyDNbqAYrxkk9nv7YzdHXsimoxO-w2WFnZQ";
 
 @Component({

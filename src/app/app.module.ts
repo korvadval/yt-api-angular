@@ -8,6 +8,7 @@ import { SearcherComponent } from './components/searcher/searcher.component';
 import { VideoPanelComponent } from './components/video-panel/video-panel.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { LoginPassComponent } from './components/login-pass/login-pass.component';
+import { DialogWindowComponent } from './components/dialog-window/dialog-window.component';
 
 const appRoutes: Routes =[
   {path:'',component:SearcherComponent},
@@ -21,6 +22,7 @@ const appRoutes: Routes =[
     VideoPanelComponent,
     FavoritesComponent,
     LoginPassComponent,
+    DialogWindowComponent,
   ],
   imports: [
     BrowserModule,

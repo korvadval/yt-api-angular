@@ -1,4 +1,4 @@
-<div class="searchHead">Поиск видео</div>
+<div class="searchHead unselectable">Поиск видео</div>
 <br>
 <div class="searchPlace">
     <form (submit)="onSubmit(userAck.value)" class="searchForm">
@@ -8,8 +8,10 @@
                placeholder="Название видео..."
                #userAck
         />
-        <button class="searchButton" type="submit">Поиск</button>
+        <div class="saveIcon unselectable" (click)="onSave()">{{saveIcon}}</div>    
+        <button class="searchButton unselectable" type="submit">Поиск</button>
     </form>
 </div>
 <br>
+<app-dialog-window [(needDialog)]="needDialog" [userAsk]="userAsk"></app-dialog-window>
 <app-video-panel [userAsk]="userAsk"></app-video-panel>
