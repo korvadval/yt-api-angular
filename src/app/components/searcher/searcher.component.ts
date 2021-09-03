@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SearcherComponent implements OnInit {
 
   userAsk!:string;
+  count!:string;
   saveIcon:string=String.fromCharCode(10084);
   needDialog:boolean=false;
 
@@ -15,6 +16,9 @@ export class SearcherComponent implements OnInit {
 
   onSubmit(userAsk:string){
     this.userAsk=userAsk;
+    this.count="12";
+    localStorage.setItem("userAsk", userAsk);
+    localStorage.setItem("userAskCount", "12");
   }
   onSave(){
     //if(this.userAsk)
@@ -23,5 +27,12 @@ export class SearcherComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    let ask=localStorage.getItem("userAsk"),
+        count=localStorage.getItem("count");
+    if(ask && count)
+    {
+      this.userAsk=ask;
+      this.count=count;
+    }
   }
 }

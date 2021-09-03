@@ -11,6 +11,7 @@ const API_KEY = "AIzaSyDNbqAYrxkk9nv7YzdHXsimoxO-w2WFnZQ";
 
 export class VideoPanelComponent implements OnInit {
   @Input() userAsk: string = "";
+  @Input() count: string = "";
   videos:any[]=[]
   
   constructor() { }
@@ -21,7 +22,7 @@ export class VideoPanelComponent implements OnInit {
   ngOnChanges(changes: SimpleChanges) {
     if(this.userAsk)
     {
-      searcherYT ({key: API_KEY, term: this.userAsk, res: 12}, (videos: any[]) => { 
+      searcherYT ({key: API_KEY, term: this.userAsk, res: this.count}, (videos: any[]) => { 
          this.videos=videos;
       })
     }

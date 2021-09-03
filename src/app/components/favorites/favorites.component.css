@@ -1,0 +1,64 @@
+.headerFavorites {
+  margin: 2% 0 0 5%;
+  font-size: xx-large;
+}
+.listOfFavorites {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemFavorites {
+  display: flex;
+  height: 40px;
+  width: calc(100% - 100px);
+  border: 0;
+  margin: 5px 0 5px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+.itemFavoritesHover {
+  display: flex;
+  height: 40px;
+  width: calc(100% - 100px);
+  border: 0;
+  margin: 5px 0 5px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.itemFavoritesName {
+  font-size: large;
+}
+.itemFavoritesPanelToDo {
+  display: flex;
+  flex-direction: row;
+}
+.itemFavoritesButton {
+  display: none;
+  margin: 0 25px 0 25px;
+  font-size: revert;
+  width: 75px;
+  cursor: pointer;
+}
+.itemFavoritesButtonHover {
+  margin: 0 25px 0 25px;
+  font-size: revert;
+  width: 75px;
+  cursor: pointer;
+}
+.find {
+  background-color: #6de686a8;
+  height: 20px;
+  padding: 5px 0 0 0;
+  border-radius: 10px;
+}
+.delete {
+  background-color: #e66d6da8;
+  height: 20px;
+  padding: 5px 0 0 0;
+  border-radius: 10px;
+}

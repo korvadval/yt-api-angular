@@ -16,6 +16,7 @@ export class AppComponent {
   }
   deleteToken(){
     localStorage.removeItem("token");
+    localStorage.removeItem("userAsk");
     window.location.reload()
   }
 }

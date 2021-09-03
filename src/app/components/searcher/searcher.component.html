@@ -1,4 +1,4 @@
-<div class="searchHead unselectable">Поиск видео</div>
+<div class="searchHead unselectable">Поиск видео по запросу {{userAsk}}</div>
 <br>
 <div class="searchPlace">
     <form (submit)="onSubmit(userAck.value)" class="searchForm">
@@ -14,4 +14,4 @@
 </div>
 <br>
 <app-dialog-window [(needDialog)]="needDialog" [userAsk]="userAsk"></app-dialog-window>
-<app-video-panel [userAsk]="userAsk"></app-video-panel>
+<app-video-panel [userAsk]="userAsk" [count]="count"></app-video-panel>

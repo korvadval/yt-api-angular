@@ -1,1 +1,11 @@
-<p>favorites works!</p>
+<div class="headerFavorites">Избранное</div>
+<br>
+<div class="listOfFavorites" *ngFor="let item of items">
+    <button class="itemFavorites" (mouseenter)="onEnter(item.id)" (mouseleave)="onLeave(item.id)">   
+        <div class="itemFavoritesName">{{item.name}}</div>
+        <div class="itemFavoritesPanelToDo"> 
+            <div id="{{'find'+item.id}}" class="itemFavoritesButton find" (click)="onFindClick(item.id)" routerLink="/">Найти</div> 
+            <div id="{{'delete'+item.id}}" class="itemFavoritesButton delete" (click)="onDeleteClick(item.id)">Удалить</div>                 
+        </div>
+    </button>
+</div>
